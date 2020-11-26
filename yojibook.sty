@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{yojibook}
 
+
+
 \newcommand{\definitionpage}[4]
 %%% 1. kanji, 2. hiragana, 3. definition, 4. optional notes
 {
@@ -30,5 +32,18 @@
 #1\\
 \end{minipage}
 }
+\end{center}
+}
+
+\newcommand{\finalpage}
+{
+\newpage
+\pagenumbering{gobble}
+\fontsize{11}{11}
+\vspace*{\fill}
+\noindent
+\begin{center}
+\includegraphics[scale=0.1]{coneko}\\
+Another little book by Coneko Press
 \end{center}
 }

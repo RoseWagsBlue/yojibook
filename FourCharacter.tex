@@ -13,6 +13,7 @@
 \usepackage{fancyhdr}%%for custom numbers at foot
 \usepackage{ifthen}  %%for custom numbers at foot
 
+
 \usepackage{yojibook}
 
 \pagestyle{fancy}  
@@ -36,60 +37,30 @@
 \newcounter{mycounter}
 \cfoot{ \ifthenelse {\isodd {\value{page}}\and \value{page}>1}{\themycounter}{}}
 
-%\newcommand{\definitionpage}[4]
-%%%% 1. kanji, 2. hiragana, 3. definition, 4. optional notes
-%{
-%\newpage
-%\CJKfamily{Script=CJK}
-%\stepcounter{mycounter}
-%\fontsize{11}{11}
-%\noindent
-%#2
-%\newline
-%\newline
-%#3
-%\newline
-%\newline
-%#4
-%\yojipage{#1}
-%}
 
-%\newcommand{\yojipage}[1]
-%{
-%\newpage
-%\fontsize{24}{24}
-%\begin{center}
-%\rotatebox{-90}{
-%\begin{minipage}{0.95\textwidth}
-%\CJKfamily{cjk-vert}
-%#1\\
-%\end{minipage}
-%}
-%\end{center}
-%}
-%
+
+
 
 \begin{document}
-%
 \fontsize{12}{12}
 \hspace{0pt}
 \vfill
 
-
 \begin{center}
-よじじゅくご\\
+じょじじゅくご\\
 四字熟語\\
 Arranged by Wanikani Level
-\end{center}
+
 \vfill
 \hspace{0pt}
 Compiled by Leebo\\
-Design by RoseWagsBlue
-\center
+Design by RoseWagsBlue\\
 \the\year\ \\
 Coneko Press
-\center
+\end{center}
 \newpage
+
+
 
 \definitionpage{一上一下}{いちじょういちげ}{up and down}{}
 \definitionpage{三日天下}{みっかてんか}{short-lived rule; governments and power are fleeting}{}
@@ -154,34 +125,11 @@ Coneko Press
 
 
 
+\whiledo{\value{mycounter}<63}{\newpage * \stepcounter{mycounter}}
+%\ifthenelse{\value{mycounter}<64}{\newpage * \stepcounter{mycounter}}
 
 
-\newpage
-*
-\stepcounter{mycounter}
-\newpage
-*
-\newpage
-*
-\stepcounter{mycounter}
-\newpage
-*
-\newpage
-*
-\stepcounter{mycounter}
-\newpage
-*
-\newpage
-\stepcounter{mycounter}
-\fontsize{11}{11}
-\vspace*{\fill}
-\noindent
-\begin{center}
-\includegraphics[scale=0.1]{coneko}\\
-Another little book by Coneko Press
-\end{center}
-
- 
+\finalpage
 
 
 \end{document} 
