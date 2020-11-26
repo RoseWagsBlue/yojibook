@@ -1,0 +1,187 @@
+%   
+
+\documentclass[a8paper]{article}
+
+\usepackage[paperheight=74mm,paperwidth=52mm]{geometry}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage{anyfontsize}
+\usepackage{hyperref}
+\usepackage{graphicx} %%for logo on last page
+
+\usepackage{xltxtra, setspace}
+\usepackage{fancyhdr}%%for custom numbers at foot
+\usepackage{ifthen}  %%for custom numbers at foot
+
+\usepackage{yojibook}
+
+\pagestyle{fancy}  
+\renewcommand{\headrulewidth}{0pt}%%gets rid of weird line at top of page
+
+
+\hypersetup {
+ pdfauthor= Rose DiFonzo,
+ pdftitle={Four Character Yojijukugo, よじじゅくご,   },
+ pdfsubject={kanji },
+ pdfkeywords={kanji, japan, wanikani, vocabulary,Four Character Yojijukugo },
+ }
+ 
+ 
+
+\setCJKmainfont{ipam.ttf}
+\setCJKfamilyfont{cjk-vert}[Script=CJK,RawFeature=vertical]{ipam.ttf}
+
+ 
+\fontsize{24}{24}
+\newcounter{mycounter}
+\cfoot{ \ifthenelse {\isodd {\value{page}}\and \value{page}>1}{\themycounter}{}}
+
+%\newcommand{\definitionpage}[4]
+%%%% 1. kanji, 2. hiragana, 3. definition, 4. optional notes
+%{
+%\newpage
+%\CJKfamily{Script=CJK}
+%\stepcounter{mycounter}
+%\fontsize{11}{11}
+%\noindent
+%#2
+%\newline
+%\newline
+%#3
+%\newline
+%\newline
+%#4
+%\yojipage{#1}
+%}
+
+%\newcommand{\yojipage}[1]
+%{
+%\newpage
+%\fontsize{24}{24}
+%\begin{center}
+%\rotatebox{-90}{
+%\begin{minipage}{0.95\textwidth}
+%\CJKfamily{cjk-vert}
+%#1\\
+%\end{minipage}
+%}
+%\end{center}
+%}
+%
+
+\begin{document}
+%
+\fontsize{12}{12}
+\hspace{0pt}
+\vfill
+
+
+\begin{center}
+よじじゅくご\\
+四字熟語\\
+Arranged by Wanikani Level
+\end{center}
+\vfill
+\hspace{0pt}
+Compiled by Leebo\\
+Design by RoseWagsBlue
+\center
+\the\year\ \\
+Coneko Press
+\center
+\newpage
+
+\definitionpage{一上一下}{いちじょういちげ}{up and down}{}
+\definitionpage{三日天下}{みっかてんか}{short-lived rule; governments and power are fleeting}{}
+\definitionpage{上下一心}{しょうかいっしん}{coming together as one regardless of social status}{}
+\definitionpage{一世一代}{いっせいちだい}{once in a lifetime}{}
+\definitionpage{十人十色}{じゅうにんといろ}{to each his own; different strokes for different folks}{}
+\definitionpage{海千山千}{うみせんやません}{sly old dog; old fox}{}
+\definitionpage{花鳥風月}{かちょうふうげつ}{the beauties of nature}{}
+\definitionpage{馬耳東風}{ばじとうふう}{utter indifference; talking to a wall; in one ear and out the other}{}
+\definitionpage{八方美人}{はっぽうびじん}{everyone's friend}{ (Caution! typically meant in a derogatory way; imagine someone who is nice to your face and mean behind your back)}{}
+\definitionpage{七転八起}{しちてんはっき}{fall seven times, get up eight}{ (Note: this is a condensed version of a proverb and can also be read the same as the proverb ななころびやおき)}
+\definitionpage{以心伝心}{いしんでんしん}{tacit understanding; telepathy; communicating without speaking}{}
+\definitionpage{一期一会}{いちごいちえ}{once in a lifetime encounter}{ (Note: This is actually used as the Japanese title of Forrest Gump)}
+\definitionpage{一問一答}{いちもんいっとう}{answering question by question; exchange of questions and answers}{}
+\definitionpage{全知全能}{ぜんちぜんのう}{omniscient and omnipotent}{}
+\definitionpage{半信半疑}{はんしんはんぎ}{half in doubt; half-convinced; dubious; incredulous​}{}
+\definitionpage{危急存亡}{ききゅうそんぼう}{life-and-death matter; an emergency or crisis where survival is threatened}{}
+\definitionpage{是々非々}{ぜぜひひ}{free and unbiased; fair and just; calling a spade a spade}{}
+\definitionpage{多種多様}{たしゅたよう}{diversity; a great variety of}{}
+\definitionpage{自業自得}{じごうじとく}{you reap what you sow; paying for one's mistakes}{}
+\definitionpage{心機一転}{しんきいってん}{changing one's attitude; turning over a new leaf}{}
+\definitionpage{大義名分}{たいぎめいぶん}{just cause; good reason}{}
+\definitionpage{因果応報}{いんがおうほう}{retribution; just desserts}{}
+\definitionpage{疑心暗鬼}{ぎしんあんき}{jumping at shadows; once you suspect one thing, everything will look suspicious}{}
+\definitionpage{千差万別}{せんさばんべつ}{an infinite variety of; being extremely varied and wide-ranging​}{}
+\definitionpage{不平不満}{ふへいふまん}{discontent and grumbling}{}
+\definitionpage{右往左往}{うおうさおう}{moving about in confusion; going every which way}{}
+\definitionpage{前途多難}{ぜんとたなん}{having many difficulties in store; grim prospects​}{}
+\definitionpage{奇想天外}{きそうてんがい}{fantastic; bizarre; incredible}{}
+\definitionpage{暗中模索}{あんちゅうもさく}{groping in the dark; exploring new avenues without having any clues}{}
+\definitionpage{適材適所}{てきざいてきしょ}{the right person in the right place}{}
+\definitionpage{針小棒大}{しんしょうぼうだい}{exaggeration; making a mountain out of a molehill}{}
+\definitionpage{自画自賛}{じがじさん}{singing one's own praises}{}
+\definitionpage{表裏一体}{ひょうりいったい}{two sides of the same coin}{}
+\definitionpage{枝葉末節}{しようまっせつ}{unimportant details}{}
+\definitionpage{油断大敵}{ゆだんたいてき}{unpreparedness is one's greatest enemy}{}
+\definitionpage{旧態依然}{きゅうたいいぜん}{remaining unchanged (from the old state of things)}{}
+\definitionpage{臨機応変}{りんきおうへん}{resourcefulness; playing it by ear}{}
+\definitionpage{敵前逃亡}{てきぜんとうぼう}{desertion in the face of the enemy; deserting under enemy fire​}{}
+\definitionpage{暗中飛躍}{あんちゅうひやく}{behind-the-scenes maneuvering}{}
+\definitionpage{才色兼備}{さいしょくけんび}{being gifted with both intelligence and beauty}{}
+\definitionpage{他人行儀}{たにんぎょうぎ}{in a reserved manner; treating a friend as a stranger; unduly distant; formal​​}{}
+\definitionpage{天下無双}{てんかむそう}{unrivaled; peerless}{}
+\definitionpage{支離滅裂}{しりめつれつ}{illogical; inconsistent; disjointed}{}
+\definitionpage{危機一髪}{ききいっぱつ}{by a hair's breadth; in the nick of time; close call}{}
+\definitionpage{全身全霊}{ぜんしんぜんれい}{complete devotion; body and soul}{}
+\definitionpage{斬新奇抜}{ざんしんきばつ}{novel; unconventional; cutting-edge}{}
+\definitionpage{喜怒哀楽}{きどあいらく}{human emotions (joy, anger, pathos, and humor) }{}
+\definitionpage{一網打尽}{いちもうだじん}{round-up (e.g. of criminals); wholesale arrest; catching the whole herd with one throw}{}
+\definitionpage{質実剛健}{しつじつごうけん}{unaffected and sincere, with fortitude and vigor}{}
+\definitionpage{優勝劣敗}{ゆうしょうれっぱい}{survival of the fittest​}{}
+\definitionpage{有頂天外}{うちょうてんがい}{beside oneself with joy; in an ecstasy of delight​}{}
+\definitionpage{神出鬼没}{しんしゅつきぼつ}{appearing in unexpected places and at unexpected moments; elusive; phantom}{}
+\definitionpage{残虐無道}{ざんぎゃくむどう}{inhumanity; atrocity}{}
+\definitionpage{疾風迅雷}{しっぷうじんらい}{with lightning speed}{}
+\definitionpage{佳人薄命}{かじんはくめい}{the good die young}{}
+\definitionpage{天衣無縫}{てんいむほう}{perfect beauty with no trace of artifice; flawless}{}
+\definitionpage{森羅万象}{しんらばんしょう}{all things in nature; the whole creation​}{}
+\definitionpage{順風満帆}{じゅんぷうまんぱん}{smooth sailing}{}
+\definitionpage{温厚篤実}{おんこうとくじつ}{having a gentle and sincere personality}{}
+\definitionpage{被害妄想}{ひがいもうそう}{persecution complex; paranoia​}{}
+
+
+
+
+
+\newpage
+*
+\stepcounter{mycounter}
+\newpage
+*
+\newpage
+*
+\stepcounter{mycounter}
+\newpage
+*
+\newpage
+*
+\stepcounter{mycounter}
+\newpage
+*
+\newpage
+\stepcounter{mycounter}
+\fontsize{11}{11}
+\vspace*{\fill}
+\noindent
+\begin{center}
+\includegraphics[scale=0.1]{coneko}\\
+Another little book by Coneko Press
+\end{center}
+
+ 
+
+
+\end{document} 
